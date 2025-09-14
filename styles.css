@@ -98,6 +98,107 @@ body {
     box-shadow: 0 4px 15px rgba(79, 195, 247, 0.3);
 }
 
+/* Weakness table styles */
+.weakness-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.weakness-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.weakness-card h3 i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.weakness-card .description {
+    margin-bottom: 20px;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.weakness-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.weakness-table th,
+.weakness-table td {
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: middle;
+}
+
+.weakness-table th {
+    background: rgba(255, 215, 0, 0.1);
+    font-weight: 600;
+    color: #ffd700;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.weakness-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.weakness-table .damage-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.weakness-table .weak {
+    background-color: rgba(32, 178, 170, 0.2) ;
+    color: #20b2aa ;
+    font-weight: 600;
+}
+
+.weakness-table .resistant {
+    background-color: rgba(255, 99, 71, 0.2);
+    color: #ff6347;
+    font-weight: 600;
+}
+
+.weakness-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .weakness-table {
+        font-size: 0.8rem;
+    }
+    
+    .weakness-table th,
+    .weakness-table td {
+        padding: 8px 4px;
+    }
+    
+    .weakness-table .damage-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .donate-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(79, 195, 247, 0.4);
