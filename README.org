@@ -4,6 +4,7 @@
  <img src="https://github.com/thanosapollo/nightreign-mapseed-recogniser/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Deployment" />
 </a>
 <br>
+<h3 align="center"> 번역된 사이트는 여기에서 <a href="https://lsynergy.github.io/nightreign-seed-recognizer/"> 여기 </a>
 <h3 align="center"> 원본 사이트는 여기에서 <a href="https://thanosapollo.github.io/nightreign-mapseed-recogniser/"> here </a>
 <h3 align="center"> You can access the orginal site <a href="https://thanosapollo.github.io/nightreign-mapseed-recogniser/"> here </a>
    #+END_HTML
