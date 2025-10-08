@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elden Ring Nightreign: Map Seed Recogniser</title>
+    <title>Elden Ring Nightreign: 맵시드 찾기 </title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,10 +18,10 @@
         <header class="header">
             <h1 class="title">
                 <i class="fas fa-map"></i>
-                Elden Ring Nightreign: Map Seed Recogniser
+                Elden Ring Nightreign: 맵 시드 찾기
             </h1>
             <div class="subtitle">
-                <p class="version">Version 1.1</p>
+                <p class="version">Version 1.1</p> 
                 <span id="cv-status" style="font-size: 11px; color: #6c757d; margin-left: 15px;"></span>
             </div>
         </header>
@@ -38,32 +38,32 @@
             <div id="selection-section" class="section" style="display: none;">
                 <div class="selection-grid">
                     <div class="selection-card">
-                        <h3>Choose Your Nightlord</h3>
-                        <p class="current-selection">Currently chosen: <span id="chosen-nightlord">NONE</span></p>
-                        <div class="button-grid">
-                            <button class="nightlord-btn" data-nightlord="Gladius">Tricephalos</button>
-                            <button class="nightlord-btn" data-nightlord="Adel">Gaping Jaw</button>
-                            <button class="nightlord-btn" data-nightlord="Gnoster">Sentient Pest</button>
-                            <button class="nightlord-btn" data-nightlord="Maris">Augur</button>
-                            <button class="nightlord-btn" data-nightlord="Libra">Equilibrious Beast</button>
-                            <button class="nightlord-btn" data-nightlord="Fulghor">Darkdrift Knight</button>
-                            <button class="nightlord-btn" data-nightlord="Caligo">Fissure in the Fog</button>
-                            <button class="nightlord-btn" data-nightlord="Heolstor">Night Aspect</button>
+                        <h3>보스를 골라보자</h3>
+                        <p class="current-selection">현재 선택: <span id="chosen-nightlord">없음</span></p>
+                        <div class="button-grid"> 
+                            <button class="nightlord-btn" data-nightlord="Gladius">세멍뭉이</button>
+                            <button class="nightlord-btn" data-nightlord="Adel">턱</button>
+                            <button class="nightlord-btn" data-nightlord="Gnoster">벌레</button>
+                            <button class="nightlord-btn" data-nightlord="Maris">마리스핵노잼</button>
+                            <button class="nightlord-btn" data-nightlord="Libra">리브라</button>
+                            <button class="nightlord-btn" data-nightlord="Fulghor">풀고르</button>
+                            <button class="nightlord-btn" data-nightlord="Caligo">칼리고</button>
+                            <button class="nightlord-btn" data-nightlord="Heolstor">밤본자</button>
                         </div>
                         <div class="unknown-nightlord-container">
-                            <button class="nightlord-btn" data-nightlord="Unknown">Unknown</button>
+                            <button class="nightlord-btn" data-nightlord="Unknown">아몰랑</button>
                         </div>
                     </div>
 
                     <div class="selection-card">
-                        <h3>Choose Your Map / Shifting Earth</h3>
-                        <p class="current-selection">Currently chosen: <span id="chosen-map">NONE</span></p>
+                        <h3>지변을 골라보자 </h3>
+                        <p class="current-selection">현재 선택: <span id="chosen-map">없음</span></p>
                         <div class="button-grid">
-                            <button class="map-btn" data-map="Default">Default</button>
-                            <button class="map-btn" data-map="Mountaintop">Mountaintop</button>
-                            <button class="map-btn" data-map="Crater">Crater</button>
-                            <button class="map-btn" data-map="Rotted Woods">Rotted Woods</button>
-                            <button class="map-btn" data-map="Noklateo">Noklateo</button>
+                            <button class="map-btn" data-map="Default">기본맵</button>
+                            <button class="map-btn" data-map="Mountaintop">설산</button>
+                            <button class="map-btn" data-map="Crater">화구</button>
+                            <button class="map-btn" data-map="Rotted Woods">부패숲</button>
+                            <button class="map-btn" data-map="Noklateo">노크라테오</button>
                         </div>
                     </div>
                 </div>
@@ -71,26 +71,26 @@
 
             <div id="interaction-section" class="section" style="display: none;">
                 <div class="instructions-card">
-                    <h3><i class="fas fa-info-circle"></i> How to Use</h3>
+                    <h3><i class="fas fa-info-circle"></i> 사용 방법</h3>
                     <div class="instruction-grid">
                         <div class="instruction-item">
                             <i class="fas fa-mouse-pointer"></i>
-                            <span><strong>Left click</strong> on orange dots to place Church</span>
+                            <span><strong>왼클릭으로</strong> 오렌지 점에 성배교회를 고르고 </span>
                         </div>
                         <div class="instruction-item">
                             <i class="fas fa-hand-pointer"></i>
-                            <span><strong>Right click</strong> to choose Sorcerer's Rise or Village</span>
+                            <span><strong>오른 클릭으로</strong> 마탑 혹은 상인마을을 골라라</span>
                         </div>
                     </div>
                     <div class="button-row">
                         <button id="reset-map-btn" class="reset-btn">
                             <i class="fas fa-undo"></i>
-                            Reset Map & Remove All Markers
+                            맵 리셋 / 마커 리셋
                         </button>
                         
                         <button id="help-btn" class="help-btn">
                             <i class="fas fa-question-circle"></i>
-                            Help & Tips
+                            사용 방법 및 팁
                         </button>
                     </div>
                 </div>
@@ -100,14 +100,14 @@
                 <div class="results-grid">
                     <div class="left-panel">
                         <div class="seed-counter">
-                            <h3>Possible Map Seeds</h3>
+                            <h3>가능한 시드 수</h3>
                             <div class="seed-count" id="seed-count">0</div>
                         </div>
 
                         <div id="possible-seeds-section" class="possible-seeds-section" style="display: none;">
                             <div class="possible-seeds-card">
-                                <h4><i class="fas fa-list"></i> Select Seed to View</h4>
-                                <p class="description">Click on any seed or use arrow keys:</p>
+                                <h4><i class="fas fa-list"></i> 시드를 고르세요</h4>
+                                <p class="description">시드를 직접 클릭하거나 화살표 키를 누르세요:</p>
                                 <div id="possible-seeds-grid" class="possible-seeds-grid">
                                 </div>
                             </div>
@@ -120,8 +120,8 @@
                         <div id="selection-overlay" class="selection-overlay">
                             <div class="overlay-message">
                                 <i class="fas fa-map-marked-alt"></i>
-                                <p>Select Nightlord and Map above to begin</p>
-                                <small>Choose your settings to start seed recognition</small>
+                                <p>위에서 밤 보스 고르고 오셈</p>
+                                <small>셋팅을 골라야 시작혀~</small>
                             </div>
                         </div>
                     </div>
@@ -131,13 +131,13 @@
 
             <div id="weakness-section" class="section" style="display: block;">
                 <div class="weakness-card">
-                    <h3><i class="fas fa-shield-alt"></i> Nightlord Weaknesses & Resistances</h3>
-                    <p class="description">Reference table showing damage types and status effect weaknesses for each Nightlord</p>
+                    <h3><i class="fas fa-shield-alt"></i> 보스 약점 및 저항</h3>
+                    <p class="description">이 표는 각 보스의 타격 종류와 속성에 대한 약점을 나타냅니다.</p>
                     <div class="table-container">
                         <table id="weakness-table" class="weakness-table">
                             <tr>
-                                <th>Boss</th>
-                                <th>Best</th>
+                                <th>보스</th>
+                                <th>최대약점</th>
                                 <th><img alt="The Standard Damage icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-standard-icon-2.jpg?width=690&quality=70&format=jpg&auto=webp" title="Standard"></th>
                                 <th><img alt="The Slash Damage icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-slash-icon-2.jpg?width=690&quality=70&format=jpg&auto=webp" title="Slash"></th>
                                 <th><img alt="The Strike Damage icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-strike-icon-2.jpg?width=690&quality=70&format=jpg&auto=webp" title="Strike"></th>
@@ -154,7 +154,7 @@
                                 <th><img alt="The Madness icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-madness-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Madness"></th>
                             </tr>
                             <tr>
-                                <td><strong>Tricephalos</strong></td>
+                                <td><strong>세멍뭉이</strong></td>
                                 <td><img alt="The Holy icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-holy-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Holy"></td>
                                 <td>+0%</td>
                                 <td>+0%</td>
@@ -172,7 +172,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Gaping Jaw</strong></td>
+                                <td><strong>턱</strong></td>
                                 <td><img alt="The Poison icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-poison-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Poison"></td>
                                 <td>+0%</td>
                                 <td>+0%</td>
@@ -190,7 +190,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Gnoster</strong> (Moth)</td>
+                                <td><strong>두 벌레</strong> (나방)</td>
                                 <td><img alt="The Fire icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-fire-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Fire"></td>
                                 <td class="weak">+15%</td>
                                 <td class="weak">+25%</td>
@@ -208,7 +208,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Gnoster</strong> (Scorpion)</td>
+                                <td><strong>두 벌레</strong> (땅강아지)</td>
                                 <td><img alt="The Fire icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-fire-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Fire"></td>
                                 <td class="resistant">-10%</td>
                                 <td class="resistant">-20%</td>
@@ -226,7 +226,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Augur</strong></td>
+                                <td><strong>마리스핵노잼</strong></td>
                                 <td><img alt="The Lightning icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-lightning-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Lightning"></td>
                                 <td>+0%</td>
                                 <td class="weak">+15%</td>
@@ -244,7 +244,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Equilibrious Beast</strong></td>
+                                <td><strong>리브라</strong></td>
                                 <td><img alt="The Madness icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-madness-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Madness"></td>
                                 <td>+0%</td>
                                 <td class="weak">+10%</td>
@@ -262,7 +262,7 @@
                                 <td class="weak">154</td>
                             </tr>
                             <tr>
-                                <td><strong>Darkdrift Knight</strong></td>
+                                <td><strong>풀고르</strong></td>
                                 <td><img alt="The Lightning icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-lightning-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Lightning"></td>
                                 <td>+0%</td>
                                 <td>+0%</td>
@@ -280,7 +280,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Fissure in the Fog</strong></td>
+                                <td><strong>칼리고</strong></td>
                                 <td><img alt="The Fire icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-fire-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Fire"></td>
                                 <td>+0%</td>
                                 <td class="resistant">-15%</td>
@@ -298,7 +298,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>The Shape Of Night</strong></td>
+                                <td><strong>밤본자 1페</strong></td>
                                 <td><img alt="The Holy icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-holy-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Holy"></td>
                                 <td>+0%</td>
                                 <td class="weak">+15%</td>
@@ -316,7 +316,7 @@
                                 <td class="resistant">-</td>
                             </tr>
                             <tr>
-                                <td><strong>Heolstor</strong></td>
+                                <td><strong>밤본자 2페</strong></td>
                                 <td><img alt="The Holy icon in Elden Ring: Nightreign." class="damage-icon" src="https://assetsio.gnwcdn.com/elden-ring-nightreign-holy-icon.jpg?width=690&quality=70&format=jpg&auto=webp" title="Holy"></td>
                                 <td>+0%</td>
                                 <td class="resistant">-10%</td>
