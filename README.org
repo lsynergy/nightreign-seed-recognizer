@@ -10,14 +10,13 @@
 
 * About
 
-Map seed recognizer for [[https://en.bandainamcoent.eu/elden-ring/elden-ring-nightreign][Elden Ring Nightreign]].
+ [[https://en.bandainamcoent.eu/elden-ring/elden-ring-nightreign][Elden Ring Nightreign]] Map seed 찾기 프로그램을 번역했어요.
 
-** How to use:
+** 사용법:
 
-+ Select Nightlord & Map/Shifting Earth
-+ Select the POIs of the map, which include Village, Church of Vows &
-  Sorcerer's Rise.
-+ Based on the above input, you will find your map seed information.
++ 보스와 지변 여부를 골라주세요
++ 중요 거점을 선택해 주세요. 성배병 교회, 상인 마을, 마탑
++ 위에 선택을 바탕으로 map seed를 찾을 수 있습니다.
 
      #+BEGIN_HTML
    <p align="center">
@@ -26,5 +25,9 @@ Map seed recognizer for [[https://en.bandainamcoent.eu/elden-ring/elden-ring-nig
    #+END_HTML
 
 * Credits
+
++ 이 프로젝트는 [[https://github.com/thefifthmatt][thefifthmatt]] 바탕으로 가져다가 번역하고
++ 루리웹 "극극심해어" 님이 공유하신 지도 파일을 교체하여 만들어졌습니다. 공유 정말로 고맙습니다. 
++ [[https://m.ruliweb.com/family/4892/board/185738/read/88371][맵시드 지도 원본]] 
 
 This project is based on the work of [[https://github.com/thefifthmatt][thefifthmatt]].
