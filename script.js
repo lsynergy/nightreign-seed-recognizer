@@ -196,9 +196,9 @@ class NightreignMapRecogniser {
             if (statusElement) {
                 if (hasClassifications) {
                     const classCount = Object.keys(CV_CLASSIFICATION_DATA).length;
-                    statusElement.innerHTML = `<span style="color: #28a745;">✅ Loaded ${seedCount} seeds (${classCount} classified)</span>`;
+                    statusElement.innerHTML = `<span style="color: #28a745;">✅ ${seedCount} 개 seeds 로드 (${classCount} 개 분류됨)</span>`;
                 } else {
-                    statusElement.innerHTML = `<span style="color: #28a745;">✅ Loaded ${seedCount} seeds</span>`;
+                    statusElement.innerHTML = `<span style="color: #28a745;">✅ ${seedCount} 개 seeds 로드</span>`;
                 }
             }
             
@@ -839,7 +839,7 @@ class NightreignMapRecogniser {
 
     showNoSeedsFound() {
         const seedCountElement = this.domElements.seedCount;
-        seedCountElement.innerHTML = '<span style="color: #e74c3c; font-weight: 600;">NO SEED FOUND<br>RESET THE MAP!</span>';
+        seedCountElement.innerHTML = '<span style="color: #e74c3c; font-weight: 600;">맵 없다<br>리셋하고 다시 찾아!</span>';
     }
 
 
