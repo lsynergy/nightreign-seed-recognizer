@@ -28,7 +28,7 @@
 
 * Credits
 
-+ 이 프로젝트는 [[https://github.com/thefifthmatt][thefifthmatt]] 바탕으로 가져다가 번역하고
++ 이 프로젝트는 [[https://github.com/thefifthmatt][thefifthmatt]] 와 [[https://git.thanosapollo.org/nightreign-seed-recognizer/][thanosapollo]] 바탕으로 가져다가 번역하고
 + 루리웹 "극극심해어" 님이 공유하신 지도 파일을 교체하여 만들어졌습니다. 공유 정말로 고맙습니다. 
 + [[https://m.ruliweb.com/family/4892/board/185738/read/88371][맵시드 지도 원본]] 
 
