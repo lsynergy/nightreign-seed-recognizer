@@ -861,7 +861,7 @@ class NightreignMapRecogniser {
                 <br>
                 <b style="color: black;">Mapseed: ${mapSeed}</b>
                 <br>
-                <small style="color: blue;">새로운 탭에서 지도를 열려면 지도를 클릭하세요.</small>
+                <small style="color: #28a745;">새로운 탭에서 지도를 열려면 지도를 클릭하세요.</small>
             </center>
         `;
     }
